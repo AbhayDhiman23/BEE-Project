@@ -1,0 +1,111 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Saved Notes Section Styles */
+.saved-notes-section {
+  margin-top: 1rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+}
+
+.saved-notes-section h4 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1rem;
+  color: #61dafb;
+}
+
+.saved-notes-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+.saved-note-item {
+  background: #2a2a2a;
+  border: 1px solid #444;
+  border-radius: 4px;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.saved-note-item:hover {
+  background: #333;
+}
+
+.note-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.25rem;
+}
+
+.note-header strong {
+  color: #fff;
+  font-size: 0.9rem;
+}
+
+.note-date {
+  font-size: 0.75rem;
+  color: #888;
+}
+
+.note-preview {
+  font-size: 0.8rem;
+  color: #ccc;
+  line-height: 1.2;
+  margin-bottom: 0.25rem;
+}
+
+.note-subject {
+  font-size: 0.7rem;
+  color: #61dafb;
+  font-style: italic;
+}
+
+.empty-notes, .auth-prompt {
+  text-align: center;
+  color: #888;
+  font-size: 0.8rem;
+  padding: 1rem;
+}
